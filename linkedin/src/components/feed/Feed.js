@@ -47,9 +47,9 @@ const Feed = () => {
       <div className="feed__inputContainer">
         <div className="feed__input">
           <CreateIcon />
-          <form >
+          <form className="feed__form">
               <input type="text" value={input} onChange={inputChangeHandler}/>
-              <button type="submit" onClick={sendPost}>Send</button>
+              <button type="submit" onClick={sendPost} className='feed__button'>Send</button>
           </form>
         </div>
         <div className="feed__inputOptions">
